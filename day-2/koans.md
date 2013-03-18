@@ -1,0 +1,2 @@
+- null conveys intention
+- null and undefined are objects which do not permit modification/access
