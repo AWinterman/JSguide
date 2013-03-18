@@ -1,39 +1,36 @@
 var request = require('request');
 
-
-module.exports = function(url1, url2, url3, ready){
-    var error = false,
-        loaded_counter = 0,
-        htmls = {},
-
-    request.get(url1, get_urls)
-            
-            
-            
-            function(err, resp, html1){
-            error = err || error;
-            htmls.firstHTML = html1;
-            request.get(url2, )
-    })
-
-        
-    }
-
-
+function get_urls(loaded_counter){
+    //A function which simply updates htmls and error (as side effects) if
+    //we have yet to exhaust the `urls`. Alternatively, `get_nth_url calls
+    //ready (its last argument) on htmls or error (as appropriate).
+    return function(err, response, html){
+        //update the right html
+        htmls[names[loaded_counter]] = html;
+        console.log(html);
+        error = err || error;
+        loaded_counter += 1;
         if (loaded_counter === urls.length - 1){
             //then we've gotten through all the urls, and we should do all
             //those things that require us to have all of them already.
             if (error){
                 return ready(error);
             }
-            return ready(null, htmls)
+            return ready(null, htmls);
         }
-        get_urls(n+1)
+        request.get(urls[loaded_counter],  get_urls(loaded_counter));
     }
+}
 
 
-    get_nth_url();
-    //I'm getting an error because of how scoping is running.
+module.exports = function(url1, url2, url3, ready){
+    var error = false,
+        loaded_counter = 0,
+        htmls = {},
+        names = "firstHTML secondHTML thirdHTML".split(" "),
+        urls = [].slice.call(arguments, 0, -1);
+
+    request.get(url[urls[loaded_counter]], get_url(loaded_counter))
 }
 
 /*
