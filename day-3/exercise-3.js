@@ -30,6 +30,3 @@ module.exports = function(url1, url2, url3, ready){
         ready(null, htmls);
 
     }
-
-
-}
