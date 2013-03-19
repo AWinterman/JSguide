@@ -87,7 +87,7 @@ assert.ok(Array.isArray(your_function.apply(null, args)))
 // argument "UrArgument", and returns a variable-arity function "NewFunction" 
 // that, when called, uses `apply` to call "UrFunction" with a receiver of "UrArgument" and
 // the arguments from "NewFunction".
-
+ 
 var your_function = require('./exercise-3')
   , my_object = {x: ~~(Math.random() * 10) + 1}
   , new_function
