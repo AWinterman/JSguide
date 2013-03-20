@@ -1,0 +1,12 @@
+{
+  "name": "object-dotpath",
+  "version": "0.0.0",
+  "description": "A tiny little module which helps you use a.dot.path to retreive a deeply nested attribute from an object.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": "",
+  "author": "Andrew Winterman",
+  "license": "BSD"
+}
