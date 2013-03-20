@@ -564,6 +564,11 @@ proto.constructor = cons
 // return `this`.
 // Export the subclass.
 
+//COMMENT: There should either be an explicit test for remove here, or a note to 
+//         the reader which says that remove isn't tested except to make sure it doesn't
+//         throw any exceptions. It might also be reasonable to tell the reader
+//         to write a test for remove here.
+
 var YourEE = require('./exercise-4')
   , yee = new YourEE
   , expected = Math.random()
