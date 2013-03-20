@@ -1,7 +1,7 @@
 module.exports = give_speach
 
 function give_speach(Constructor){
-    New_type = function(){
+    var New_type = function(){
         Constructor.call(this);
     }
     New_type.prototype = new Constructor;

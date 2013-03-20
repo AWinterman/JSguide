@@ -12,11 +12,7 @@
 //replaced by the receiver and arguments of g
 module.exports = function(self){
     var that = this;
-    var discussions = arguments; //you say potato, I say potAto 
-
     return function(){
-        console.log(that(1), that, discussions, arguments);
         return that.apply(self, arguments);
-
     }
 }

@@ -558,7 +558,7 @@ proto.constructor = cons
 // 
 // Subclass it.
 // Add a `remove` method that removes an event listener given
-// and event name and a function.
+// an event name and a function.
 // Add a `once` method that uses `remove` and `on` to only listen
 // for an event once. It should accept `event` and `listener`, and 
 // return `this`.
