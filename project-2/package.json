@@ -8,5 +8,6 @@
   },
   "repository": "",
   "author": "Andrew Winterman",
-  "license": "BSD"
+  "license": "BSD",
+  "readmeFilename": "README.md"
 }
