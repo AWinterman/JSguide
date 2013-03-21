@@ -21,7 +21,7 @@ var assert = require('assert')
 // takes kind of a bit of time to execute. if you finish a part,
 // change this like to match the part you'd like to skip to!
 
-var start = part1   // part1, part2, ... part7
+var start = part7   // part1, part2, ... part7
 
 // JavaScript was originally intended for the browser -- to provide
 // advanced functionality to web sites, making them able to "react"
